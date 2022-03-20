@@ -1,0 +1,16 @@
+#doubtlist li{
+    margin-top: 30px;
+    border-style: solid;
+    /* text-align: center; */
+}
+
+#doubtlist *{
+    padding-left: 10px;
+}
+
+#doubtlist li h4{
+    /* text-align: right; */
+    float: right;
+    padding-right: 30px;
+    /* margin-left: 100px; */
+}
