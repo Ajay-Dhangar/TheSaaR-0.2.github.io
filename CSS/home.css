@@ -34,28 +34,3 @@ body {
 #footer{
     background-color: #5B7DB1;
 }
-
-#leftAlign{
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 50px;
-}
-
-#leftAlign span{
-    align-self: center; 
-    margin-left: 10px;
-    margin-right: 25%;
-}
-
-
-#rightAlign{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 50px;
-}
-
-#rightAlign span{
-    align-self: center; 
-    margin-right: 10px;
-    margin-left: 25%;
-}

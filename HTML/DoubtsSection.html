@@ -4,20 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <META HTTP-EQUIV="Access-Control-Allow-Origin" CONTENT="http://www.example.org">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/doubtssection.css">
     <title>Doubts</title>
 </head>
 
 <body>
-    <input type="search">
-    <ul>
-        <!--Using JS and/or java we can take data of the title of the issues/username/description-->
-        <li><iframe src="issue_card.html" frameborder="0"></iframe></li>
+    <input id="sf" type="search">
+
+    <ul id="doubtlist">
+        <!-- dynamically add issues -->
+
     </ul>
-    
-<script>
-    document.body.ELEMENT_NODE    
-</script>
+    <button onclick="create_issue()">Post an issue</button>
+
+    <!-- scripts -->
+    <script src="../JavaScript/addDoubt.js"></script>
 
 </body>
 
