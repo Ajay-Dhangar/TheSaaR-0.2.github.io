@@ -2,6 +2,7 @@ body {
     background: #fafafa;
     font-family: Arial, sans-serif;
     line-height: 1.6;
+<<<<<<< HEAD
 }
   
 h2 {
@@ -34,9 +35,12 @@ h2 {
     background-color: none;
     color:white;
     
+=======
+>>>>>>> f3425b2845f06f82abaeb59552850acbb84cce86
 }
 .cardinfo a{
 
+<<<<<<< HEAD
     border-left: 3px solid rgb(255, 255, 255);
     padding: 2px;
 }
@@ -51,6 +55,56 @@ h2 {
 }
   
 #footer{
+=======
+h2 {
+    margin-top: 0;
+}
+
+.card {
+    padding: 40px;
+    background: #fff;
+    width: 60%;
+    height: 70%;
+    border-radius: 20px;
+    margin: 60px auto;
+}
+
+.card-body img {
+    height: 110%;
+    width: 105%;
+}
+
+#nav {
+    margin: 0;
+    padding: 0;
+    background-color: #004687;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.445);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.541);
+}
+
+#nav:hover {
+    background-color: none;
+    color: white;
+}
+
+.cardinfo a {
+    border-left: 3px solid rgb(255, 255, 255);
+    padding: 2px;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: rgb(27, 114, 61);
+    color: #f0f0f0;
+}
+
+#footer {
+>>>>>>> f3425b2845f06f82abaeb59552850acbb84cce86
     color: #fff;
     background-color: #3f2860;
 }
