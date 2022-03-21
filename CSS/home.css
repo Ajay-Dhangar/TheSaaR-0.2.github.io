@@ -1,124 +1,57 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin:0;
-    padding:0;
-}
-#nav
-{
-    margin:0;
-    padding:0;
-    background-color: #61A4BC;
-    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.445);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.541);
-
-}  
-#nav:hover
-{
-    background-color: none;
-    color:white;
-}
-
-.nav-link{
-    color: black;
-    font-size: 15px; 
-    font-weight: bold;
-}
-.nav-link:hover{
-    color: rgb(27, 114, 61);
-}
-.cardinfo a{
-    border-left: 3px solid rgb(10, 1, 1);
-    padding: 2px;
-}
-
-#footer{
-    background-color: #5B7DB1;
-}
-
-#leftAlign{
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 50px;
-}
-
-#leftAlign span{
-    align-self: center; 
-    margin-left: 10px;
-    margin-right: 25%;
-}
-
-
-#rightAlign{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 50px;
-}
-
-#rightAlign span{
-    align-self: center; 
-    margin-right: 10px;
-    margin-left: 25%;
-}
-
-
-body {
-  background: #fafafa;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+    background: #fafafa;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
 h2 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .card {
-  padding: 40px;
-  background: #fff;
-  width: 60%;
-  height: 70%;
-  border-radius: 20px;
-  margin: 60px auto;
-}
-.card-body img{
-     height: 110%;
-     width: 105%;
-   }
-
-
-#nav
- {
- margin:0;
- padding:0;
- background-color: #004687;
- box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.445);
- border-bottom: 1px solid rgba(0, 0, 0, 0.541);
-
-  }  
-#nav:hover
-  {
-      background-color: none;
-      color:white;
-     
-  }
-  .cardinfo a{
-  
-  border-left: 3px solid rgb(255, 255, 255);
-  padding: 2px;
-   }
-
-.nav-link{
-  color: #fff;
-  font-size: 20px; 
-  font-weight: bold;
-}
-.nav-link:hover{
-  color: rgb(27, 114, 61);
-  color: #f0f0f0;
+    padding: 40px;
+    background: #fff;
+    width: 60%;
+    height: 70%;
+    border-radius: 20px;
+    margin: 60px auto;
 }
 
-   
-  
-   #footer{
-     color: #fff;
-     background-color: #3f2860;
-   }
+.card-body img {
+    height: 110%;
+    width: 105%;
+}
+
+#nav {
+    margin: 0;
+    padding: 0;
+    background-color: #004687;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.445);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.541);
+}
+
+#nav:hover {
+    background-color: none;
+    color: white;
+}
+
+.cardinfo a {
+    border-left: 3px solid rgb(255, 255, 255);
+    padding: 2px;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: rgb(27, 114, 61);
+    color: #f0f0f0;
+}
+
+#footer {
+    color: #fff;
+    background-color: #3f2860;
+}
