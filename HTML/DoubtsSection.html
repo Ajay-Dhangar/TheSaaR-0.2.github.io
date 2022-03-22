@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/doubtssection.css">
     <title>Doubts</title>
 </head>
 
 <body>
     <input type="search">
-    <ul>
+    <ul id="doubtlist">
         <!--Using JS and/or java we can take data of the title of the issues/username/description-->
-        <li><iframe src="issue_card.html" frameborder="0"></iframe></li>
+        
     </ul>
-    
-<script>
-    document.body.ELEMENT_NODE    
-</script>
+    <button onclick="create_issue()">Add an issue</button>
+
+    <!-- Scripts -->
+    <script src="../JavaScript/addDoubt.js"></script>
 
 </body>
 
