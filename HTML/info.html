@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+<html>
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,75 +11,86 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <link rel="stylesheet" href="/CSS/home.css">
-
-    <title>Hello, world!</title>
-
-</head>
-<style>
-    .column {
-        float: left;
-        width: 33.3%;
-        margin-bottom: 16px;
-        padding: 0 4px;
-    }
-    
-    .row {
-        margin: 5%;
-    }
-    
-    .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-    
-    .flip-box {
-        background-color: transparent;
-        width: 300px;
-        height: 200px;
-        border: 1px solid #f1f1f1;
-        perspective: 1000px;
-    }
-    
-    .flip-box-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
-    }
-    
-    .flip-box:hover .flip-box-inner {
-        transform: rotateY(180deg);
-    }
-    
-    .flip-box-front,
-    .flip-box-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-    }
-    
-    .flip-box-front {
-        background-color: #bbb;
-        color: black;
-    }
-    
-    .flip-box-back {
-        background-color: #555;
-        color: white;
-        transform: rotateY(180deg);
-    }
-    
-    @media screen and (max-width: 650px) {
+    <title>RightEducation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #f1f1f1;
+            padding: 20px;
+            font-family: Arial;
+        }
+        /* Center website */
+        
+        .main {
+            max-width: 1000px;
+            margin: auto;
+        }
+        
+        h1 {
+            font-size: 50px;
+            word-break: break-all;
+        }
+        
+        .row {
+            margin: 10px -16px;
+        }
+        /* Add padding BETWEEN each column */
+        
+        .row,
+        .row>.column {
+            padding: 8px;
+        }
+        /* Create three equal columns that floats next to each other */
+        
         .column {
-            width: 100%;
+            float: left;
+            width: 33.33%;
+            display: none;
+            /* Hide all elements by default */
+        }
+        /* Clear floats after rows */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Content */
+        
+        .content {
+            background-color: white;
+            padding: 10px;
+        }
+        /* The "show" class is added to the filtered elements */
+        
+        .show {
             display: block;
         }
-    }
-</style>
+        /* Style the buttons */
+        
+        .btn {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: white;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #ddd;
+        }
+        
+        .btn.active {
+            background-color: #666;
+            color: white;
+        }
+    </style>
+</head>
 
 <body>
 
@@ -103,7 +114,7 @@
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 40px;">
-                    <button class="btn" type="submit"><i class="fa fa-search"
+                    <button class="btn-1" type="submit" style="background-color: transparent;"><i class="fa fa-search"
                       style="font-size:28px;color: #fff; text-decoration: solid;"></i></button>
                 </form>
 
@@ -112,52 +123,145 @@
     </nav>
     <hr>
 
-    <div class="row">
-        <div class="column">
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <img src="/img/Ajay-Dhangar.jpeg" alt="Paris" style="width:300px;height:200px">
-                    </div>
-                    <div class="flip-box-back">
-                        <h2>Ajay</h2>
-                        <p>What an amazing Boy</p>
-                    </div>
-                </div>
-            </div>
+
+    <!-- MAIN (Center website) -->
+    <div class="main">
+
+        <h1>TheSaaR.com</h1>
+        <hr>
+
+        <h2>PORTFOLIO</h2>
+
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> TheSaaR Members </button>
+            <button class="btn" onclick="filterSelection('nature')"> Batch-1</button>
+            <button class="btn" onclick="filterSelection('cars')"> Batch-2</button>
+            <button class="btn" onclick="filterSelection('people')"> Batch-3</button>
         </div>
 
-        <div class="column">
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <img src="/img/Ajay-Dhangar.jpeg" alt="Paris" style="width:300px;height:200px">
-                    </div>
-                    <div class="flip-box-back">
-                        <h2>Ajay</h2>
-                        <p>What an amazing Boy</p>
-                    </div>
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+            <div class="column nature">
+                <div class="content">
+                    <img src="/img/Ajay-Dhangar.jpeg" alt="Mountains" style="width:100%">
+                    <h4>Mountains</h4>
+                    <p>Lorem ipsum dolor..</p>
                 </div>
             </div>
-        </div>
-
-
-        <div class="column">
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <img src="/img/Ajay-Dhangar.jpeg" alt="Paris" style="width:300px;height:200px">
-                    </div>
-                    <div class="flip-box-back">
-                        <h2>Ajay</h2>
-                        <p>What an amazing Boy</p>
-                    </div>
+            <div class="column nature">
+                <div class="content">
+                    <img src="/img/Ajay-Dhangar.jpeg" alt="Lights" style="width:100%">
+                    <h4>Lights</h4>
+                    <p>Lorem ipsum dolor..</p>
                 </div>
             </div>
+            <div class="column nature">
+                <div class="content">
+                    <img src="/img/Ajay-Dhangar.jpeg" alt="Nature" style="width:100%">
+                    <h4>Forest</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+
+            <div class="column cars">
+                <div class="content">
+                    <img src="/img/Ajay-Dhangar.jpeg" alt="Car" style="width:100%">
+                    <h4>Retro</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column cars">
+                <div class="content">
+                    <img src="/img/Ajay-Dhangar.jpeg" alt="Car" style="width:100%">
+                    <h4>Fast</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column cars">
+                <div class="content">
+                    <img src="/img/Ajay-Dhangar.jpeg" alt="Car" style="width:100%">
+                    <h4>Classic</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+
+            <div class="column people">
+                <div class="content">
+                    <img src="/img/Ajay-Dhangar.jpeg" alt="Car" style="width:100%">
+                    <h4>Girl</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column people">
+                <div class="content">
+                    <img src="/img/Ajay-Dhangar.jpeg" alt="Car" style="width:100%">
+                    <h4>Man</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column people">
+                <div class="content">
+                    <img src="/img/Ajay-Dhangar.jpeg" alt="Car" style="width:100%">
+                    <h4>Woman</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <!-- END GRID -->
         </div>
+
+        <!-- END MAIN -->
     </div>
 
-    <!-- Footer -->
+    <script>
+        filterSelection("all")
+
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+
+
     <footer class="text-center text-lg" id="footer">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
