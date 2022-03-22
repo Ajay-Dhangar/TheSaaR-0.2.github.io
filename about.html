@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="200x200" href="logo1.jpeg">
+    <link rel="icon" type="image/png" sizes="62x62" href="logo1.jpeg">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo1.jpeg">
+
+    <title>THE SAAR | ABOUT US!</title>
+
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-image: url(https://www.daydreameducation.co.uk/media/wysiwyg/cat-images/backgrounds/computer-science-background.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        width: 100%;
+        height: 600px;
+
+    }
+    .column {
+        float: left;
+        width: 20.3%;
+        margin-bottom: 5px;
+        margin-top: 150px;
+        padding: 0 2px;
+        
+       
+    }
+    
+    
+    
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .flip-box {
+        background-color: transparent;
+        width: 250px;
+        height: 300px;
+        border: 5px solid #0a090a;
+        perspective: 1000px;
+        background-image: url(https://tse4.mm.bing.net/th?id=OIP.UIpNsx_ytD0pamM7xZQXiwHaEK&pid=Api&P=0&w=305&h=171);
+        margin-top: 0%;
+        margin-left: 8%;
+        
+    
+    }
+    
+    .flip-box-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+
+    }
+    
+    .flip-box:hover .flip-box-inner {
+        transform: rotateY(180deg);
+    }
+    
+    .flip-box-front,
+    .flip-box-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+    .flip-box-front {
+        background-color: #bbb;
+        color: black;
+    }
+    
+    .flip-box-back {
+        background-color: rgb(54, 133, 207);
+        color: white;
+        transform: rotateY(180deg);
+    }
+
+    .light_gray{
+        margin-top: 10%;
+    }
+    .a-container{
+        
+        font-family: 'Courier New', Courier, monospace;
+        margin: 3%;
+        position: relative;
+
+    }
+    .first-txt{
+        position: absolute;
+        top: 20px;
+        left: 280px;
+        color: rgb(11, 5, 26);
+        text-decoration: solid;
+        text-align: left;
+
+    }
+    .text{
+        margin-left: 3%;
+        margin-right: 3%;
+        
+        text-justify: auto;
+        text-align: center;
+        
+    }
+    .text{
+        margin-left: 3%;
+        margin-right: 3%;
+        
+        text-justify: auto;
+        text-align: center;
+        
+    }
+   
+    .gallery{
+        margin-top: 5%;
+        
+    }
+    .style{
+        background-color: rgb(116, 173, 240);
+        
+    }
+    .design{
+        background-color: white;
+        margin-top: 0%;
+    }
+    .hello{
+        margin-top: 5%;
+        background-color: #fff;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-bottom: 3%;
+    }
+    #nav {
+    margin: 0;
+    padding: 0;
+    box-shadow: 2px 8px 2px rgba(0, 0, 0, 0.445);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.541);
+    }
+    #nav:hover {
+    background-color: none;
+    color: white;
+}
+.nav-link {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-link:hover {
+    color: rgb(27, 114, 61);
+    color: #f0f0f0;
+}
+.cardinfo a {
+    border-left: 3px solid rgb(255, 255, 255);
+    padding: 2px;
+}
+.card-body img {
+    height: 110%;
+    width: 105%;
+}
+
+
+    
+    @media screen and (max-width: 650px) {
+        .column {
+            width: 100%;
+            display: block;
+        }
+    }
+</style>
+
+
+
+    <body data-rsssl=1>
+
+
+
+
+      <nav class="navbar sticky-top navbar-expand-lg " id="nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-size: 35px; font-weight: bold; color: #050505; text-shadow: 40px;border-color: red;">TheSaaR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: #fff;">
+        <span class="fa fa-fw fa-bars"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Content</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Doubt Section
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Search Fild</a></li>
+                            <li><a class="dropdown-item" href="#">List of Doubt</a></li>
+                            <li><a class="dropdown-item" href="#">Post a Doubt</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Doubt Page</a></li>
+                        </ul>
+                    </li>
+                
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Features
+            </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Guide</a></li>
+                            <li><a class="dropdown-item" href="#">Team work</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Others</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" style="margin-right: 35px;">
+                    <a href="#" style="color: rgb(173, 218, 14); text-decoration: solid; font-size: 25px; border-color: rgb(255, 0, 0);"><i
+              class="fa fa-bell"></i></a>
+                </form>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 40px;">
+                    <button class="btn" type="submit"><i class="fa fa-search"
+              style="font-size:28px;color: #fff; text-decoration: solid;"></i></button>
+                </form>
+
+                <div class="cardinfo">
+                    <form class="d-flex">
+                        <a href="#" style="color: #fff; text-decoration: solid; font-size: 25px;"><i
+                class="fa fa-fw fa-user-circle"></i> My Profile</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+        </div>
+    </nav>
+
+    <div class="main-top">
+        <div class="brand">
+          
+            
+            <a href="home.html"> <img src="logo1.jpeg" alt="Softweb.io Technologies" title="Softweb.io Technologies"
+                height="70" width="160"></a>
+        </div>
+
+    
+        <p> <center><h2><b>ABOUT US</b></h2></center> </p>
+
+    
+    <div class="container-flex">
+        <div class="row">
+            <div class="linear_bg" data-aos="fade-up">
+                <div class="container full-width-lg">
+                    <div class="row mt-5">
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="100">
+                            <h3 class="about-title">What Makes Us Different From The Rest ? </h3>
+                        </div>
+    
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="150">
+                            <div class="about_box">UseCase Base Learning <br><img src="https://thinkpalm.com/wp-content/uploads/2020/04/ico_innovation.png"></div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="200">
+                            <div class="about_box">Learn Multiple Technologies <br><img src="https://thinkpalm.com/wp-content/uploads/2020/04/ico_managment.png"></div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="250">
+                            <div class="about_box">Expertise Mentors <br><img src="https://thinkpalm.com/wp-content/uploads/2020/04/ico_product.png"></div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="300">
+                            <div class="about_box">Optimized project<br><img src="https://thinkpalm.com/wp-content/uploads/2020/04/ico_domain.png"></div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="350">
+                            <div class="about_box">Cost Of Free <br><img src="https://thinkpalm.com/wp-content/uploads/2020/04/ico_customer.png"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="design">
+        <div class="column">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src=" https://media-exp1.licdn.com/dms/image/C4D03AQGhdDSRptbpYw/profile-displayphoto-shrink_400_400/0/1636616980244?e=1653523200&v=beta&t=W_CRKXGYOIni-82M51gqBsjVTYKqLRjwUs9uEXTpqlc"  alt="Paris" style="width:240px;height:280px">
+
+                    </div>
+                    <div class="flip-box-back">
+                        <h1>Rahul Rathod  </h1>
+                        <span>
+                            <h4>Founder of RightEducation</h4>
+                        </span>
+                     <a target="_blank"  href="https://www.linkedin.com/in/rahul-rathod-" ><img src="https://d24hrkfl5wrd0k.cloudfront.net/themes/thinkpalm/images/ico_linked.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+                <div class="light_gray" >
+                    <h2>The SaaR <span>Program</span> is dedicated to help its learners grow their skills in this digital world.</h2>
+                    <br>
+                    <h3>We Exposes The Real WOrld !</h3>
+                </div>
+
+                <div class="a-container">
+                    
+
+
+                   <img  src="http://getwallpapers.com/wallpaper/full/a/d/1/266509.jpg" 
+                   class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" width="1140" height="400">
+                   
+                     
+                    
+                       <h4 class="first-txt"> <b>As the name suggests here we focus on 'The Saar' of the topic leaving unimportant things like dates and facts.
+                        We focus on the things that are important to the topic and give you live practical examples while explaining the whole process.
+                        This programme will not help you fill up those pages in the exam sheet but instead will teach you so you can start using the tech right away.
+                      </b> </h4>
+                </div>
+                      
+                <div class="text">
+                      
+                      <p> <h1><b>The Saar is backed by The RightEducation an open source online learning 
+                          <br>   
+                                                        platform for each and every one. </b></h1></p>		
+                </div>			
+                    
+                    
+    </div>
+           
+        <section class=" gallery">
+            <div class="container text-center full-width-lg">
+                <h3 class="sub-header-alt">The Saar is brought to you by:</h3>
+            </div>
+            <br>
+            <br>
+    
+            <div class="style">
+    <div class="row">
+        
+        <div class="col-lg-3 col-md-6 text-center" >
+            <div class="white_wrap">
+                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQECclJv9OIPbA/profile-displayphoto-shrink_800_800/0/1625547244207?e=1653523200&v=beta&t=BENtERG3UNUJFjtbYdpI7HvHgI_VSbuum4vt802zP1A"
+                height="200" width="200" style="border-radius:100%">
+                
+                <h3>Shubham Sen </h3>
+                <span>
+                    Co-Founder and Content Writer<div></div>
+                </span>
+    
+                <a target="_blank"  href="https://www.linkedin.com/in/shubham-sen-12178a1b1"><img src="https://d24hrkfl5wrd0k.cloudfront.net/themes/thinkpalm/images/ico_linked.png"></a>
+            </div>
+        </div>
+        
+                <div class="col-lg-3 col-md-6 text-center" >
+            <div class="white_wrap">
+                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEn30X6P8niQQ/profile-displayphoto-shrink_800_800/0/1640425526463?e=1653523200&v=beta&t=L_VVnBpsJIW7d7pV-KWbh-DtLH86hvgstEfaQHPN6WY"
+                height="200" width="200" style="border-radius:100%">
+                <h3>Aman Panwar </h3>
+                <span>
+                      Co-Founder                                   <div></div>
+                </span>
+                <a target="_blank"  href=" https://www.linkedin.com/in/aman-panwar-3ab78a1b1"><img src="https://d24hrkfl5wrd0k.cloudfront.net/themes/thinkpalm/images/ico_linked.png"></a>
+            </div>
+    
+        </div>
+    
+        <div class="col-lg-3 col-md-6 text-center" >
+            <div class="white_wrap">
+                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQH_guKRwv7gQA/profile-displayphoto-shrink_800_800/0/1593603527238?e=1653523200&v=beta&t=0nPDWniB4cnp9Ilag9K17pwuC5Q4ugmK0JrwgE2enUI"
+                height="200" width="200" style="border-radius:100%">
+         
+        <h3>Anurag Chouhan </h3>
+                <span>
+                      Co-Founder                                   <div></div>
+                </span>
+                <a target="_blank"  href="https://www.linkedin.com/in/anurag-chouhan-9698701aa"><img src="https://d24hrkfl5wrd0k.cloudfront.net/themes/thinkpalm/images/ico_linked.png"></a>
+            </div>
+        </div>
+    
+        <div class="col-lg-3 col-md-6 text-center" >
+            <div class="white_wrap">
+                <img src="https://righteducation.in/wp-content/uploads/2022/01/Ansh-Shrivas-181x300.jpg"
+                height="200" width="200" style="border-radius:100%">
+                <h3> Ansh Mahendra Shrivas </h3>
+                <span>
+                     Technical Support                                <div></div>
+                </span>
+                <a target="_blank"  href="https://www.linkedin.com/in/sandeep-p-699939134"><img src="https://d24hrkfl5wrd0k.cloudfront.net/themes/thinkpalm/images/ico_linked.png"></a>
+            </div>
+        </div>
+    
+        <div class="col-lg-3 col-md-6 text-center" >
+            <div class="white_wrap">
+                <img src="https://righteducation.in/wp-content/uploads/2021/12/Deepak-ShAh-261x300.jpeg"
+                height="200" width="200" style="border-radius:100%">
+                <h3>Deepak Shah  </h3>
+                <span>
+                      Technical Support                                <div></div>
+                </span>
+                <a target="_blank"  href="https://www.linkedin.com/in/deepakshah99"><img src="https://d24hrkfl5wrd0k.cloudfront.net/themes/thinkpalm/images/ico_linked.png"></a>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 text-center">
+            <div class="white_wrap">
+                <img src="https://righteducation.in/wp-content/uploads/2021/12/Harish-Patidar-266x300.jpg"
+                height="200" width="200" style="border-radius:100%">
+                <h3> Harish Patidar </h3>
+                <span>
+                     Resource Creator                                 <div></div>
+                </span>
+                <a target="_blank"  href="https://www.linkedin.com/in/sandeep-p-699939134"><img src="https://d24hrkfl5wrd0k.cloudfront.net/themes/thinkpalm/images/ico_linked.png"></a>
+            </div>
+        </div>
+       
+    </div>
+    
+
+    <section class=" gallery">
+        <div class="container text-center full-width-lg">
+            <h3 class="sub-header-alt">Right Education core team members.</h3>
+        </div>
+        <br>
+        <br>
+
+        <div class="row">
+           
+            <div class="col-lg-3 col-md-6 text-center" >
+                <div class="white_wrap">
+            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEZ30OGO_0eKA/profile-displayphoto-shrink_800_800/0/1638799926352?e=2147483647&v=beta&t=VyldaAZzJ_7ToxouMJFEQzRdT2dgg_uquXy43RRu350"
+            height="200" width="200" style="border-radius:100%">
+            <h3> Shubhangi Thakur </h3>
+            
+            <a target="_blank"  href="https://www.linkedin.com/in/shubhangi-thakur-820797220"><img src="https://d24hrkfl5wrd0k.cloudfront.net/themes/thinkpalm/images/ico_linked.png"></a>
+        </div>
+    </div>
+    
+   
+    
+    <div class="col-lg-3 col-md-6 text-center" >
+        <div class="white_wrap">
+            <img src="https://righteducation.in/wp-content/uploads/2022/02/sujal-2-150x150.jpg"
+            height="200" width="200" style="border-radius:100%">
+            <h3>Sujal Sahu </h3>
+    
+            <a target="_blank"  href=" https://www.linkedin.com/in/sujal-sahu-ab9894226"><img src="https://d24hrkfl5wrd0k.cloudfront.net/themes/thinkpalm/images/ico_linked.png"></a>
+        </div>
+    </div>
+    
+    
+    
+    <div class="col-lg-3 col-md-6 text-center" >
+        <div class="white_wrap">
+            <img src="https://righteducation.in/wp-content/uploads/2022/02/IMG_20211105_113508_268-vishvjeet-singh-rathore-150x150.jpg"
+            height="200" width="200" style="border-radius:100%">
+            <h3> Vishvjeet Singh </h3>
+            
+            <a target="_blank"  href="https://www.linkedin.com/in/vishvjeet-singh-rathore-475784203"><img src="https://d24hrkfl5wrd0k.cloudfront.net/themes/thinkpalm/images/ico_linked.png"></a>
+        </div>
+    </div>
+    
+    
+    
+    <div class="col-lg-3 col-md-6 text-center" >
+        <div class="white_wrap">
+            <img src="https://righteducation.in/wp-content/uploads/2022/02/Harshit-Dewda-1-150x150.jpeg"
+            height="200" width="200" style="border-radius:100%">
+            <h3> Harshit Dewda </h3>
+            
+            <a target="_blank"  href="https://www.linkedin.com/in/harshit-devda-738b09230"><img src="https://d24hrkfl5wrd0k.cloudfront.net/themes/thinkpalm/images/ico_linked.png"></a>
+        </div>
+    </div>
+    
+    
+    
+    <div class="col-lg-3 col-md-6 text-center" >
+        <div class="white_wrap">
+            <img src="https://righteducation.in/wp-content/uploads/2022/02/Priyansh-Patel-150x150.jpg"
+            height="200" width="200" style="border-radius:100%">
+            <h3>Priyansh Patel </h3>
+    
+            <a target="_blank"  href="https://www.linkedin.com/in/priyansh-patel-7a1306217"><img src="https://d24hrkfl5wrd0k.cloudfront.net/themes/thinkpalm/images/ico_linked.png"></a>
+        </div>
+    </div>
+    
+    
+    
+    <div class="col-lg-3 col-md-6 text-center" >
+        <div class="white_wrap">
+            <img src="https://righteducation.in/wp-content/uploads/2022/02/Ajay-Dhangar-150x150.jpg"
+            height="200" width="200" style="border-radius:100%">
+            <h3>Ajay Dhanger</h3>
+    
+            <a target="_blank"  href="https://www.linkedin.com/in/ajay-dhangar-bb89b4227"><img src="https://d24hrkfl5wrd0k.cloudfront.net/themes/thinkpalm/images/ico_linked.png"></a>
+        </div>
+    </div>
+    
+    
+    
+    <div class="col-lg-3 col-md-6 text-center" >
+        <div class="white_wrap">
+            <img src="https://righteducation.in/wp-content/uploads/2021/12/Tosif-Mansuri-2-150x150.jpg"
+            height="200" width="200" style="border-radius:100%">
+            <h3>Tosif Mansuri </h3>
+            
+            <a target="_blank"  href="https://www.linkedin.com/in/tosif-mansuri-34b2b2225"><img src="https://d24hrkfl5wrd0k.cloudfront.net/themes/thinkpalm/images/ico_linked.png"></a>
+        </div>
+    </div>
+    
+    
+    
+    <div class="col-lg-3 col-md-6 text-center" >
+        <div class="white_wrap">
+            <img src="https://righteducation.in/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-06-at-9.41.44-PM-1-150x150.jpeg"
+            height="200" width="200" style="border-radius:100%">
+            <h3> Vivek Sharma</h3>
+    
+            <a target="_blank"  href="https://www.linkedin.com/in/vivek-sharma-4782a0205"><img src="https://d24hrkfl5wrd0k.cloudfront.net/themes/thinkpalm/images/ico_linked.png"></a>
+        </div>
+    </div>
+    
+    
+    
+    <div class="col-lg-3 col-md-6 text-center" >
+        <div class="white_wrap">
+            <img src="https://righteducation.in/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-07-at-7.27.22-PM-150x150.jpeg"
+            height="200" width="200" style="border-radius:100%">
+            <h3> Vehdat Hamid</h3>
+    
+            <a target="_blank"  href="https://www.linkedin.com/in/vehdat-hamid-55ab89224"><img src="https://d24hrkfl5wrd0k.cloudfront.net/themes/thinkpalm/images/ico_linked.png"></a>
+        </div>
+    </div>
+    
+    
+    <div class="col-lg-3 col-md-6 text-center" >
+        <div class="white_wrap">
+            <img src="https://righteducation.in/wp-content/uploads/2022/02/Tejpal-Singh-150x150.jpeg"
+            height="200" width="200" style="border-radius:100%">
+            <h3>Tejpal Singh
+            </h3>
+    
+            <a target="_blank"  href="https://www.linkedin.com/in/tejpal-singh-767a74224"><img src="https://d24hrkfl5wrd0k.cloudfront.net/themes/thinkpalm/images/ico_linked.png"></a>
+        </div>
+    </div>
+    
+    </div>
+    
+    
+    
+    
+    
+    <div class="hello">
+                                    <div class="container full-width-lg text-center" >
+                                        <h3 class="sub-header">What We're All About.</h3>
+                                        <p>Right Education’s main moto is to provide quality education free of cost with right path , right guidance and right approach.
+                                            <br>
+                                            <h3 class="sub-header">Who We Are.</h3>
+                                            "It is impossible for a man to learn what he thinks he already knows."
+                                        </p>
+                                       
+                                    
+                                   
+                              
+                            </div>
+                            <div class="container full-width-lg text-center" >
+                                <h3 class="sub-header">Students that trust us</h3>
+                                <br>
+                                                <h4 class="sub-header">Right Education team always care about their learners and that’s why we launched multiple courses in different domains.</h4>
+                                            </div>
+                               
+                            </div>
+    
+                     
+
+    
+    <footer class="text-center text-lg" id="footer">
+        
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+           
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            
+            <div style="font-weight: bold; font-size: 25px;">
+
+                <a href=" https://twitter.com/_RightEducation?s=20&t=v-87550aKy6W3K3Jnb1vRw" class="me-4 text-reset">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://t.me/joinchat/ukp0ArAH4owxZWY9" class="me-4 text-reset">
+                    <i class="fa fa-telegram"></i>
+                </a>
+                <a href="https://instagram.com/right_education_official?utm_medium=copy_link" class="me-4 text-reset">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/right-education-official/" class="me-4 text-reset">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+
+                <a href="https://www.youtube.com/channel/UC8_558yHHa8BLaU7ydvomGQ?sub_confirmation=1" class="me-4 text-reset">
+                    <i class="fa fa-youtube"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>RightEducation
+                        </h6>
+                        <p>
+                            Right Education team always care about their learners and that’s why we launched multiple courses in different domains.
+                        </p>
+                    </div>
+                 
+                 
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> 
+                            
+                          
+                            Mandsaur, Madhya Pradesh, India 
+                            <br>
+                           &nbsp;   &nbsp;  &nbsp;  &nbsp;  458001</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i> team@righteducation.in
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> +91 8085983114</p>
+                        <p><i class="fas fa-print me-3"></i> +91 6265422877</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+   
+        <div class="ast-footer-copyright" ><p>Copyright © 2022 <a href="https://righteducation.in/"> Right Education </a></p>
+        </div>		
+
+        <div class="ast-header-html inner-link-style-"><div class="ast-builder-html-element"><p>Powered by TheSaaR Team</p>
+        </div></div>	
+        
+        
+           
+
+
+    </footer>
+    <!-- Footer -->
+
+
+</body>
+
+</html>
