@@ -21,12 +21,23 @@
 
 </head>
 
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        padding: 20px;
+        font-family: Arial;
+    }
+</style>
+
 
 <body>
 
-    <nav class="navbar sticky-top navbar-expand-lg " id="nav">
+    <nav class="navbar sticky-top navbar-expand-lg " id="nav" style="border-radius: 8px;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/HTML/ajay_home.html" style="font-size: 35px; font-weight: bold; color: #d2ff0b; text-shadow: 40px;border-color: red;">TheSaaR</a>
+            <a class="navbar-brand" href="/HTML/Home.html"><img src="/img/logo.jpg" style="height: 50px; width: 50px; border-radius: 25px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: #fff;">
         <span class="fa fa-fw fa-bars"></span>
       </button>
@@ -36,7 +47,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Info</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Member</a>
+                        <a class="nav-link" href="/HTML/info.html">Member</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contacts</a>
@@ -44,14 +55,13 @@
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 40px;">
-                    <button class="btn" type="submit"><i class="fa fa-search"
+                    <button class="btn-1" type="submit" style="background-color: transparent;"><i class="fa fa-search"
                       style="font-size:28px;color: #fff; text-decoration: solid;"></i></button>
                 </form>
 
             </div>
         </div>
     </nav>
-
     <div class="row" style="background-color: rgba(222, 203, 203, 0.336); box-shadow: 5px 3px;">
         <div class="linear_bg" data-aos="fade-up">
             <div class="container full-width-lg">
